@@ -1,5 +1,71 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.background {
+    background: #d8d8d8;
+}
+
+/*
+Desktop view
+*/
+
 p {
-    color:blueviolet;
-    font-size: 25px;
-    font-style: italic;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 4rem;
+    color: darkblue;
+}
+
+.journey-image {
+    background: url(img/bear.jpg) no-repeat center center;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journey-text {
+    color: black;
+}
+/*
+Tablet view
+*/
+
+@media (max-width: 768px) {
+    h1 {
+        color: green;
+    }
+}
+
+/*
+Mobile view
+*/
+@media (max-width: 425px) {
+    header h1 {
+        color: hotpink;
+        margin: 0;
+        padding: 15px;
+    }
+
+    li {
+        list-style: none;
+        padding: 10px;
+    }
+
+    ul {
+        padding: 0px;
+    }
+
+    header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
