@@ -4,22 +4,58 @@ html {
     color: black;
 }
 .background {
-    background: #d8d8d8;
+   /* background: #d8d8d8; */
+    background: rgba(216, 216, 216, 0.6);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
 }
 
 /*
 Desktop view
 */
 
-p {
-    font-size: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
     font-family: cursive;
     font-size: 4rem;
     color: darkblue;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+header h1, header nav {
+    flex: 2;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav li {
+    display: inline-block;
 }
 
 .journey-image {
@@ -32,16 +68,51 @@ h1 {
 }
 
 .journey-text {
+    color: rgb(28, 131, 8);
+}
+
+a {
+    text-decoration: none;
     color: black;
 }
-/*
-Tablet view
-*/
 
-@media (max-width: 768px) {
-    h1 {
-        color: green;
-    }
+p {
+    font-size: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    margin-left: 15px;
+}
+
+article > header {
+    justify-content: space-between;
+}
+
+article, .sidebar-widget {
+    padding: 15px;
+    margin: 15px 0;
+}
+
+article > header {
+    background: #d8d8d8;
+}
+
+a:hover {
+    color:blue;
+}
+
+td:nth-child(2) {
+    padding-left: 30px;
 }
 
 /*
@@ -49,7 +120,6 @@ Mobile view
 */
 @media (max-width: 425px) {
     header h1 {
-        color: hotpink;
         margin: 0;
         padding: 15px;
     }
@@ -67,5 +137,21 @@ Mobile view
         text-align: center;
         display: flex;
         flex-direction: column;
+    }
+
+    .journey-text {
+        text-align: center;
+        font-size: 2rem;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    i {
+        margin: 0 5px;
     }
 }
