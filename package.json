@@ -1,0 +1,24 @@
+{
+  "name": "learning-web-dev",
+  "version": "1.0.0",
+  "description": "Hello world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HannahFloyd/learning-web-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HannahFloyd/learning-web-dev/issues"
+  },
+  "homepage": "https://github.com/HannahFloyd/learning-web-dev#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.2"
+  }
+}

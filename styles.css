@@ -1,10 +1,17 @@
+:root {
+    --blue: blue;
+    --cyan: rgba(38, 198, 204, 0.8);
+}
+
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
-    color: black;
+    color: rgb(22, 22, 22);
 }
-.background {
-    background: rgba(175, 175, 175, 0.6);
+
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
@@ -14,9 +21,14 @@ html {
     margin-left: 25px;
 }
 
-body {
+.container {
+    width: 95%;
+    max-width: 1100px;
     margin: 0 auto;
-    max-width: 2000px;
+}
+
+body {
+    background-color: var(--cyan);
 }
 
 * {
@@ -140,7 +152,6 @@ td:nth-child(2) {
 .about-me {
     display: flex;
     flex-direction: row;
-    background-color: lightcyan;
 }
 
 .about-me li {
@@ -150,15 +161,14 @@ td:nth-child(2) {
 .about-me > main {
     flex: 3;
     padding: 15px;
-    margin: 15px 15px 125px 15px;
-    background-color: rgb(160, 160, 160);
+    padding-right: 30px;
+    margin-left: 10px;
 }
 
 .about-me > aside {
     flex: 1;
     padding: 15px;
     margin: 15px 15px;
-    background-color: rgb(160, 160, 160);
 }
 
 .social-media {
@@ -169,6 +179,41 @@ td:nth-child(2) {
 i:hover {
     color: blue;
 }
+
+.follow-sm {
+    margin-top: 75px;
+}
+
+/*Portfolio page*/
+
+.port-contents h2 {
+    display: flex;
+    padding: 15px;
+    background-color: rgba(160, 160, 160, 0.7);
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    
+} 
+
+.tiger {
+    display: flex;
+    padding: 50px;
+    background: url(img/Tiger.jpg) no-repeat center center;
+}
+
+.bear {
+    display: flex;
+    padding: 50px;
+    background: url(img/bear.jpg) no-repeat center center;
+}
+
+.landscape {
+    display: flex;
+    padding: 50px;
+    background: url(img/Lake.jpg) no-repeat center center;
+}
+
 
 /*
 Mobile view
