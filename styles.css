@@ -27,6 +27,10 @@ img {
     max-width: 100%;
 }
 
+h1:hover {
+    color: darkred;
+}
+
 /*
 Desktop view
 */
@@ -86,6 +90,8 @@ p {
     font-size: 2rem;
 }
 
+/*Blog page*/
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -119,6 +125,49 @@ a:hover {
 
 td:nth-child(2) {
     padding-left: 30px;
+}
+
+/*About me page*/
+
+.who-am-i > p {
+    font-size: 1.3rem;
+}
+
+.what-i-do > li {
+    font-size: 0.9rem;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    background-color: lightcyan;
+}
+
+.about-me li {
+    list-style: disc;
+}
+
+.about-me > main {
+    flex: 3;
+    padding: 15px;
+    margin: 15px 15px 125px 15px;
+    background-color: rgb(160, 160, 160);
+}
+
+.about-me > aside {
+    flex: 1;
+    padding: 15px;
+    margin: 15px 15px;
+    background-color: rgb(160, 160, 160);
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+i:hover {
+    color: blue;
 }
 
 /*
