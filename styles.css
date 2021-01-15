@@ -247,7 +247,7 @@ i:hover {
 }
 
 .photo:last-child {
-    border: 0;
+    border-bottom: 0;
 }
 
 .photo:hover {
