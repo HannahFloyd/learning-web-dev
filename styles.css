@@ -127,8 +127,13 @@ footer {
     align-items: center;
 }
 
+.cam-icon i {
+    margin-left: 200px;
+}
+
 footer p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-right: 200px;
 }
 
 /*Blog page*/
